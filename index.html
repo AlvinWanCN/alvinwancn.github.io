@@ -157,7 +157,6 @@
                         dataType: "json",
                         url:"https://alv.pub/auth_pass",
                         data:name,
-                        dataType: 'jsonp', //解决跨域问题
                         success: function (result) {
                             console.log(result.code );//打印服务端返回的数据(调试用)
                             if (result.code == 0) {
