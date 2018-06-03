@@ -1,0 +1,251 @@
+
+/*body{*/
+    /*background-color: black;*/
+    /*color: white;*/
+/*}*/
+#login{
+    /*border:dashed;*/
+    position: absolute;
+    top: 45%;
+    left: 63%;
+
+}
+#indexWelcome{
+    position: absolute;
+    color: #e62e00;
+    text-shadow:0 0 5px #CCCCCC, 0 0 10px #CCCCCC, 0 0 15px #CCCCCC, 0 0 20px #095816, 0 0 25px #095816, 0 0 30px #095816, 0 0 50px #095816, 0 0 80px #095816, 0 0 100px #095816, 0 0 150px;
+    top: 30%;
+    left: 56%;
+    font-family: Algerian;
+    font-weight: bold;
+    font-size: 27px;
+}
+
+.ophiraFont{
+    position: absolute;
+    top: 2px;
+    text-align: center;
+    text-shadow:0 0 5px #CCCCCC, 0 0 10px #CCCCCC, 0 0 15px #CCCCCC, 0 0 20px #095816, 0 0 25px #095816, 0 0 30px #095816, 0 0 50px #095816, 0 0 80px #095816, 0 0 100px #095816, 0 0 150px #095816;
+    font-weight: bold ;
+    font-size: 20px;
+    color: #8e1b1b;
+    font-family: "Cambria Math";
+    margin:11px;
+    left: 160px;
+
+}
+#indeximage{
+    position: absolute;
+    top: 19%;
+    left: 12%;
+    width: 520px;
+}
+#indextitleimg{
+    position: absolute;
+    top: 14%;
+    left: 64%;
+    width: 165px;
+}
+.indexbutton{
+    width: 183px;
+}
+.indexalien {
+
+}
+.top{
+    /*border-style: dashed;*/
+    /*border-top-width: 15px;*/
+    /*border-right-width: 5px;*/
+    /*border-bottom-width: 15px;*/
+    /*border-left-width: 5px;*/
+    /*top:0;*/
+    height: 50px;
+    /*width: 100%;*/
+    color: white;
+    background-color: #108a4d;
+
+}
+.top h1{
+    position: relative;
+    top: 20px;
+}
+.titlealien{
+    top:0px;
+    width: 47px;
+    position: absolute;
+    left: 65px;
+
+}
+.headTitel{
+    position: absolute;
+    top: 50%;
+}
+
+.logout{
+    position: absolute;
+    right: 200px;
+    top:15px;
+    color: #e4e5e7;
+    font-size:15px;
+}
+.logout a{
+    position: relative;
+    margin:60px;    /*距离左边的距离*/
+    right: -35px;
+}
+.personal_center {
+    /*border-style: dashed;*/
+    position: absolute;
+    top: 6px;
+    right: 32px;
+}
+.topic{
+
+    position: absolute;
+    left: 250px;
+    top:15px;
+    font-size:15px;
+    text-align:left;
+    font-weight: bold ;    /*加粗*/
+
+}
+
+
+.middle{
+    /*position: relative;*/
+    border-style: groove;
+    height: 736px;
+    width: 100%;
+
+}
+#menu{
+    float: left;
+    border-style:dashed;
+    color: #2ab949;
+    background-color: #2cc64d;
+    width: 200px;
+    height: 729px;
+}
+#middle_content{
+    float: right;
+    position: relative;
+    border-style:double;
+    color: #2ab949;
+    background-color: #b979c6;
+    width: 200px;
+    height: 729px;
+}
+
+#tail a{
+    position: relative;
+    left: 100px;
+    top: 30px;
+    font-weight: bold;
+    /* height: 50px; */
+    margin: 10px;
+}
+
+.middle_p{
+    position: relative;
+    /*left:100px;*/
+    top: 50px;
+    line-height: 25px;
+    /*right: -0px;*/
+
+}
+.middlep{
+    position: absolute;
+}
+
+/*.middle input{*/
+    /*position: absolute;*/
+    /*left:107px;*/
+    /*height: 18px;*/
+/*}*/
+
+#loading{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+}
+
+.center_position{
+    position: absolute;
+    left: 240px;
+}
+
+
+.green_btn {
+    height: 23px;
+    width: 175px;
+    background-color: #ab7643;
+    font-size: 16px;
+    margin-top: 13px;
+    color: #ffffff;
+    font-weight: bold;
+    border: 1px solid #2ab949;
+}
+.alien {
+    width: 255px;
+}
+.td{
+    color: #95de0c;
+}
+
+.form1{
+    /*border-style: dashed;*/
+    position: absolute;
+    left:0px;
+    width: 300px;
+    height: 300px;
+    left: 0px;
+    text-align:left;
+
+}
+.form1 p{
+    position: relative;
+    top:20px;
+}
+
+.form1 input{
+    position: absolute;
+    left: 95px;
+}
+.form1 a{
+    position: absolute;
+    top: 130px;
+    left: 95px;
+}
+
+.main{
+    text-align: center; /*让div内部文字居中*/
+    /*background-color: #fff;*/
+    border-radius: 20px;
+    width: 300px;
+    height: 650px;
+    margin: auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+a{
+    color: #8e1b1b;
+    /*font-weight: bold ;    !*加粗*!*/
+
+    font-family: "微软雅黑";
+    /*border-style: groove;*/
+
+}
+
+.func button{
+    height: 23px;
+    width: 175px;
+    background-color: black;
+    font-size: 16px;
+    margin-top: 13px;
+    color: #ffffff;
+    font-weight: bold;
+    border: 1px solid #2ab949;}
