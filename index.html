@@ -8,10 +8,7 @@
     <script type="text/javascript" src="./static/js/vue.min.js"></script>
     <script type="text/javascript" src="./static/js/iview.min.js"></script>
     <script type="text/javascript" src="./static/js/jquery-3.3.1.js"></script>
-
-
-
-
+    
 </head>
 <body style="background: black">
 <p id="indexWelcome"> Welcome to login ophira system </p>
@@ -184,7 +181,7 @@
                     {
                         type: "POST",
                         dataType: "json",
-                        url:"https://alv.pub/api/register",
+                        url:apiServer+"/api/register",
                         dataType: 'jsonp',
                         data:name,
                         success: function (result) {
