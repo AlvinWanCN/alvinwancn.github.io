@@ -71,6 +71,7 @@
 </div>
 </body>
 <script type="text/javascript">
+    apiServer="https:/alv.pub
     j_height=window.innerHeight
     function setCookie(name, value, iDay)
     {
@@ -155,7 +156,7 @@
                     {
                         type: "POST",
                         dataType: "json",
-                        url:"https://alv.pub/auth_pass",
+                        url:apiServer+"/auth_pass",
                         data:name,
                         success: function (result) {
                             console.log(result.code );//打印服务端返回的数据(调试用)
