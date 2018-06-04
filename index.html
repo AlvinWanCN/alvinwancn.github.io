@@ -161,7 +161,8 @@
                                 setCookie('nickname',result.nickname,3600);
                                 setCookie('sessionid',result.sessionid,14)
                                 console.log('login success'+result.nickname)
-                                window.location.href="./html/index.html";
+                                console.log(result)
+//                                window.location.href="./html/index.html";
                             }else {
 //{#                                alert("用户名或密码错误")#}
                                 $('#warning').html('Username or Password error,please try again.')
