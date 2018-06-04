@@ -219,6 +219,7 @@
 </div>
 <script>
         var aaa='ccccc'
+        apiServer="https:/alv.pub"
         var users_role = [];
 //        {% for i in users_role %}
 //            users_role.push({"nickname":"{{ i.nickname }}","role":"{{ i.role }}","registerDate":"{{ i.createDate }}"});
@@ -397,7 +398,7 @@
                 $.ajax({
                     type: "POST",//方法类型
                     dataType: "json",//预期服务器返回的数据类型
-                    url: "/change_password" ,//url
+                    url: apiServer+"/change_password" ,//url
                     data:name,
                     success: function (result) {
                         console.log(result);//打印服务端返回的数据(调试用)
@@ -443,7 +444,7 @@
                 $.ajax({
                     type: "POST",
                     dataType: "json",
-                    url:"/api/confirm_userinfo_change_api",
+                    url:apiServer+"/api/confirm_userinfo_change_api",
                     data:name,
                     success: function (result) {
                         if (result.code == 0) {
@@ -488,7 +489,7 @@
                 $.ajax({
                     type: "POST",
                     dataType: "json",
-                    url:"/api/change_vpntype_api",
+                    url:apiServer+"/api/change_vpntype_api",
                     data:{'vpn_type':name},
                     success: function (result) {
                         if (result.code == 0) {
@@ -534,7 +535,7 @@
                 $.ajax({
                     type: "POST",
                     dataType: "json",
-                    url:"/api/delete_user_files",
+                    url:apiServer+"/api/delete_user_files",
                     data:{'filename':filename},
                     success: function (result) {
                         if (result.code == 0) {
@@ -600,7 +601,7 @@
                 $.ajax({
                     type: "GET",
                     dataType: "json",
-                    url:"/api/get_weather_api",
+                    url:apiServer+"/api/get_weather_api",
                     data:{},
                     success: function (result) {
                         if (result.code == 0) {
@@ -624,7 +625,7 @@
                 $.ajax({
                     type: "GET",
                     dataType: "json",
-                    url:"/api/get_sys_state",
+                    url:apiServer+"/api/get_sys_state",
                     data:{},
                     success: function (result) {
                         lastLayer.used_mem = result.used_mem;
