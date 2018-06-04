@@ -58,17 +58,11 @@
                         应用中心
                     </template>
                     <menu-item name="2-1" onclick="app_content_template1.load_account()">应用账号</menu-item>
-                    {% if  role  != 0  %}
                         <menu-item name="2-2" onclick="app_content_template1.open_vpn_window()">VPN协议切换</menu-item>
                         <menu-item name="2-3" onclick="app_content_template1.open_update_code()">更新线上代码</menu-item>
                         <menu-item name="2-4" onclick="app_content_template1.open_show_users_role()">用户管理</menu-item>
                         <menu-item name="2-4" onclick="app_content_template1.open_show_file_upload()">文件管理</menu-item>
-                    {% else %}
-                        <menu-item name="2-2" onclick="app_content_template1.open_no_permission()">VPN协议切换</menu-item>
-                        <menu-item name="2-3" onclick="app_content_template1.open_no_permission()">更新线上代码</menu-item>
-                        <menu-item name="2-4" onclick="app_content_template1.open_no_permission()">用户管理</menu-item>
-                        <menu-item name="2-5" onclick="app_content_template1.open_show_file_upload()">文件管理</menu-item>
-                    {% endif %}
+
                 </submenu>
                 <submenu name="3">
                     <template slot="title">
@@ -92,7 +86,6 @@
                 <div class="middle_p">
                     <p style="color: #118b37"> Hello {{ nickname }} </p>
                     <p>本次登录IP： {{ ip }}</p>
-{#                    <p >今天上海的天气状况是<template v-if="weather.weatherStatus">${weather.weatherStatus}</template><template v-else> <spin></spin></template>，最高气温${ weather.weatherMax }℃,最低气温${ weather.weatherMin }℃。</p>#}
                     <row>
                         <i-col span="12"><div id="system" style="width: 600px;height:400px;"><spin></spin></div></i-col>
 
@@ -106,7 +99,6 @@
     <row type="flex" justify="end">
         <i-col span="19" pull="2" style="height: 139px;background-color: purple;">
     <div id="tail" >
-        {% block tail %}
             <a href="http://www.w3school.com.cn/index.html" target="_blank">w3school</a>
             <a href="https://github.com/alvinwancn" target="_blank">alvin的github</a>
             <a href="https://www.elastic.co/" target="_blank">ELK Stack</a>
@@ -114,7 +106,6 @@
             <a href="https://www.iviewui.com/docs/guide/install" target="_blank">iView</a>
             <a href="http://echarts.baidu.com/" target="_blank">echarts</a>
             <a href="https://www.openstack.org" target="_blank">openstack</a>
-        {% endblock %}
     </div>
         </i-col>
     </row>
