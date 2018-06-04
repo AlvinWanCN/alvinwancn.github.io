@@ -542,7 +542,27 @@
             },
             logout:function () {
                 removeCookie('nickname')
-                window.location.href=apiServer+"/logout";
+                $.ajax({
+                    type: "POST",
+                    dataType: "json",
+                    url:apiServer+"/logout",
+                    data:{},
+                    success: function (result) {
+                        if (result.code == 0) {
+                            lastLayer.$Message.success(result.message)
+
+                        }else {
+                            lastLayer.$Message.warning(result.message)
+                        }
+                        ;
+                    },
+                    error : function(e,result) {
+                        lastLayer.$Message.error(result.message)
+                        console.log(e)
+                    },
+                })
+                window.location.href="/";
+
             },
             upload_file:function (file) {
                 this.file=file;
