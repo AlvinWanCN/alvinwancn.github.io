@@ -499,7 +499,7 @@
                 $.ajax({
                     type: "GET",
                     dataType: "json",
-                    url:"/api/update_code_api",
+                    url:apiServer+"/api/update_code_api",
                     data:{},
                     success: function (result) {
                         if (result.code == 0) {
