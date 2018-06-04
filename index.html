@@ -155,6 +155,7 @@
                         dataType: "json",
                         url:apiServer+"/auth_pass",
                         data:name,
+                        xhrFields: {withCredentials: true},
                         success: function (result) {
                             console.log(result.code );//打印服务端返回的数据(调试用)
                             if (result.code == 0) {
