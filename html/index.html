@@ -541,7 +541,7 @@
             },
             logout:function () {
                 removeCookie('nickname')
-                window.location.href="/logout";
+                window.location.href=apiServer+"/logout";
             },
             upload_file:function (file) {
                 this.file=file;
