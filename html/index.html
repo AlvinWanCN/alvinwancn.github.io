@@ -220,13 +220,13 @@
 <script>
         var aaa='ccccc'
         var users_role = [];
-        {% for i in users_role %}
-            users_role.push({"nickname":"{{ i.nickname }}","role":"{{ i.role }}","registerDate":"{{ i.createDate }}"});
-        {% endfor %}
+//        {% for i in users_role %}
+//            users_role.push({"nickname":"{{ i.nickname }}","role":"{{ i.role }}","registerDate":"{{ i.createDate }}"});
+//        {% endfor %}
         var userfiles = [];
-        {% for filename in userfiles %}
-            userfiles.push({"filename":"{{ filename }}"})
-        {% endfor %}
+//        {% for filename in userfiles %}
+//            userfiles.push({"filename":"{{ filename }}"})
+//        {% endfor %}
         function setCookie(name, value, iDay)
         {
             var oDate=new Date();
